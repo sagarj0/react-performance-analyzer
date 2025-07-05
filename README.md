@@ -471,15 +471,3 @@ vercel --prod
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🆘 Support
-
-For issues, questions, or contributions:
-
-- **GitHub Issues**: Create an issue for bug reports or feature requests
-- **Documentation**: Check this README for comprehensive guidance
-- **Code Examples**: Review the codebase for implementation patterns
-
----
-
-**Built with ❤️ using React, TypeScript, and Ant Design**
