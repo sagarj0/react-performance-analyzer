@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Typography, Space, Divider } from "antd";
+import { Layout, Menu, Typography, Space, Divider, Flex } from "antd";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   GlobalOutlined,
@@ -55,11 +55,10 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
           width: "100%",
         }}
       >
-        <div
+        <Flex
+          align="center"
+          justify="space-between"
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
             height: "100%",
             maxWidth: "1024px",
             margin: "0 auto",
@@ -94,7 +93,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
               placeContent: "flex-end",
             }}
           />
-        </div>
+        </Flex>
       </Header>
 
       <Content
@@ -104,7 +103,8 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
           overflow: "auto",
         }}
       >
-        <div
+        <Flex
+          justify="center"
           style={{
             maxWidth: "1024px",
             margin: "0 auto",
@@ -112,7 +112,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
           }}
         >
           {children}
-        </div>
+        </Flex>
       </Content>
 
       <Footer>

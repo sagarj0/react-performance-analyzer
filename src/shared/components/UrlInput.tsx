@@ -8,6 +8,7 @@ import {
   Space,
   Typography,
   Divider,
+  Flex,
 } from "antd";
 import { SearchOutlined, ApiOutlined, GlobalOutlined } from "@ant-design/icons";
 
@@ -87,16 +88,17 @@ const UrlInput: React.FC<UrlInputProps> = ({
         border: "1px solid #e8f4fd",
       }}
     >
-      <div style={{ textAlign: "center", marginBottom: 24 }}>
+      <Flex justify="center" style={{ marginBottom: 24 }}>
         <Space direction="vertical" size="small">
-          <div
+          <Flex
+            justify="center"
             style={{
               fontSize: "48px",
               color: isApiMode ? "#1890ff" : "#52c41a",
             }}
           >
             {isApiMode ? <ApiOutlined /> : <GlobalOutlined />}
-          </div>
+          </Flex>
           <Title level={2} style={{ margin: 0, color: "#1f2937" }}>
             {title || defaultTitle}
           </Title>
@@ -111,7 +113,7 @@ const UrlInput: React.FC<UrlInputProps> = ({
             {description || defaultDescription}
           </Text>
         </Space>
-      </div>
+      </Flex>
 
       {error && (
         <Alert
@@ -168,7 +170,7 @@ const UrlInput: React.FC<UrlInputProps> = ({
         <Text type="secondary">Example URLs</Text>
       </Divider>
 
-      <div style={{ textAlign: "center" }}>
+      <Flex justify="center">
         <Space wrap size="small">
           {exampleUrls.map((exampleUrl, index) => (
             <Button
@@ -183,7 +185,7 @@ const UrlInput: React.FC<UrlInputProps> = ({
             </Button>
           ))}
         </Space>
-      </div>
+      </Flex>
     </Card>
   );
 };

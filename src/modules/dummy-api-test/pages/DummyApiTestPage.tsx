@@ -10,6 +10,7 @@ import {
   Select,
   Tag,
   Badge,
+  Flex,
 } from "antd";
 import {
   ReloadOutlined,
@@ -73,13 +74,16 @@ const DummyApiTestPage: React.FC = () => {
   };
 
   return (
-    <div
+    <Space
+      direction="vertical"
+      size="large"
       style={{
         background: "#fff",
         borderRadius: "12px",
         padding: "24px",
         minHeight: "600px",
         boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
+        width: "100%",
       }}
     >
       {/* Header Section */}
@@ -90,7 +94,7 @@ const DummyApiTestPage: React.FC = () => {
           border: "none",
         }}
       >
-        <div style={{ textAlign: "center", color: "#fff" }}>
+        <Flex justify="center" style={{ color: "#fff" }}>
           <Space direction="vertical" size="middle">
             <ExperimentOutlined style={{ fontSize: "64px" }} />
             <Title level={1} style={{ color: "#fff", margin: 0 }}>
@@ -109,7 +113,7 @@ const DummyApiTestPage: React.FC = () => {
               performance analysis capabilities.
             </Paragraph>
           </Space>
-        </div>
+        </Flex>
       </Card>
 
       {/* Filter Section */}
@@ -375,7 +379,7 @@ const DummyApiTestPage: React.FC = () => {
           </Row>
         </Card>
       )}
-    </div>
+    </Space>
   );
 };
 

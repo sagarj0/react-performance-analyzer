@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Space, Typography, Alert } from "antd";
+import { Card, Button, Space, Typography, Alert, Flex } from "antd";
 import { ReloadOutlined, GlobalOutlined } from "@ant-design/icons";
 import UrlInput from "../../../shared/components/UrlInput";
 import MetricsDisplay from "../../../shared/components/MetricsDisplay";
@@ -20,13 +20,16 @@ const WebsiteAnalysisPage: React.FC = () => {
   };
 
   return (
-    <div
+    <Space
+      direction="vertical"
+      size="large"
       style={{
         background: "#fff",
         borderRadius: "12px",
         padding: "24px",
         minHeight: "600px",
         boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
+        width: "100%",
       }}
     >
       {/* Header Section */}
@@ -37,7 +40,7 @@ const WebsiteAnalysisPage: React.FC = () => {
           border: "none",
         }}
       >
-        <div style={{ textAlign: "center", color: "#fff" }}>
+        <Flex justify="center" style={{ color: "#fff" }}>
           <Space direction="vertical" size="middle">
             <GlobalOutlined style={{ fontSize: "64px" }} />
             <Title level={1} style={{ color: "#fff", margin: 0 }}>
@@ -56,7 +59,7 @@ const WebsiteAnalysisPage: React.FC = () => {
               improve user experience and SEO rankings.
             </Paragraph>
           </Space>
-        </div>
+        </Flex>
       </Card>
 
       <UrlInput
@@ -208,7 +211,7 @@ const WebsiteAnalysisPage: React.FC = () => {
           </Space>
         </Card>
       )}
-    </div>
+    </Space>
   );
 };
 

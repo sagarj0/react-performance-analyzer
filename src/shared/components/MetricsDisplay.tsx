@@ -221,7 +221,7 @@ const MetricsDisplay: React.FC<MetricsDisplayProps> = ({
   };
 
   return (
-    <div>
+    <Space direction="vertical" size="large" style={{ width: "100%" }}>
       {/* Performance Score Card */}
       <Card
         style={{
@@ -365,7 +365,11 @@ const MetricsDisplay: React.FC<MetricsDisplayProps> = ({
           </Space>
         }
       >
-        <div style={{ lineHeight: "1.8" }}>
+        <Space
+          direction="vertical"
+          size="middle"
+          style={{ lineHeight: "1.8", width: "100%" }}
+        >
           {metrics.loadTime > 3000 && (
             <Alert
               message="Slow Load Time Detected"
@@ -409,9 +413,9 @@ const MetricsDisplay: React.FC<MetricsDisplayProps> = ({
               showIcon
             />
           )}
-        </div>
+        </Space>
       </Card>
-    </div>
+    </Space>
   );
 };
 
