@@ -6,7 +6,7 @@ This application was created using **AI Agent Copilot Claude Sonnet 4** based on
 
 > **Original Prompt:**
 >
-> "Analyzes the performance of any given URL to apply for the position. The tool should measure and display:
+> "Analyzes the performance of any given URL. The tool should measure and display:
 >
 > - **Load Time** – Total page load duration
 > - **Page Size** – Aggregate size of HTML, CSS, JS, images (KB/MB)
@@ -17,9 +17,6 @@ This application was created using **AI Agent Copilot Claude Sonnet 4** based on
 > - Use React Functional Components + Hooks only (no class components)
 > - Write clean, modular, well-structured code (avoid messy, monolithic files)
 > - UI must be responsive (should work well on desktop and mobile)
-> - Include a README file with:
->   - Setup instructions (npm install, npm start)
->   - Run instructions (how to test or deploy)"
 
 The application has been enhanced beyond the original requirements to include additional features like API testing, visual analytics, and a professional modular architecture.
 
