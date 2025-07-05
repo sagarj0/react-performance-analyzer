@@ -2,7 +2,7 @@
 
 ## 🤖 AI-Generated Application
 
-This application was created using AI assistance based on the following prompt:
+This application was created using **AI Agent Copilot Claude Sonnet 4** based on the following prompt:
 
 > **Original Prompt:**
 >
@@ -468,6 +468,14 @@ vercel --prod
 - TypeScript integration for type safety
 - Modular architecture for maintainability
 
+## 🤖 AI Development Credits
+
+This application was developed using **AI Agent Copilot Claude Sonnet 4**, demonstrating the capabilities of AI-assisted software development. The entire codebase, architecture, and documentation were generated through AI collaboration while maintaining professional development standards and best practices.
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ using React, TypeScript, Ant Design & AI Agent Copilot Claude Sonnet 4**
