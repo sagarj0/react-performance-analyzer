@@ -1,1 +1,1 @@
-export { default as PerformanceAnalyzer } from "./performanceAnalyzer";
+export { performanceAnalyzer } from "./performanceAnalyzer";

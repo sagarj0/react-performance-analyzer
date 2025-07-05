@@ -25,7 +25,7 @@ import type {
   PerformanceMetrics,
   PerformanceLevel,
 } from "../types/performance";
-import PerformanceAnalyzer from "../utils/performanceAnalyzer";
+import { performanceAnalyzer } from "../utils/performanceAnalyzer";
 import ResourceChart from "./ResourceChart";
 
 const { Title, Text } = Typography;
@@ -52,7 +52,7 @@ const MetricsDisplay: React.FC<MetricsDisplayProps> = ({
   performanceLevel,
   error,
 }) => {
-  const analyzer = PerformanceAnalyzer.getInstance();
+  const analyzer = performanceAnalyzer;
 
   if (error) {
     return (

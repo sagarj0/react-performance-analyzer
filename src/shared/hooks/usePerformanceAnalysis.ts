@@ -3,7 +3,7 @@ import type {
   PerformanceMetrics,
   PerformanceLevel,
 } from "../types/performance";
-import PerformanceAnalyzer from "../utils/performanceAnalyzer";
+import { performanceAnalyzer } from "../utils/performanceAnalyzer";
 
 interface UsePerformanceAnalysisReturn {
   metrics: PerformanceMetrics | null;
@@ -20,7 +20,7 @@ export const usePerformanceAnalysis = (): UsePerformanceAnalysisReturn => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const analyzer = PerformanceAnalyzer.getInstance();
+  const analyzer = performanceAnalyzer;
 
   const analyzeWebsite = useCallback(
     async (url: string) => {
