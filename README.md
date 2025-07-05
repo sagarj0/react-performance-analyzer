@@ -320,9 +320,7 @@ src/
 
 ## 🌐 Deployment Options
 
-## 🌐 Deployment Options
-
-### 🚀 Vercel (Recommended)
+### 🚀 Vercel
 
 ```bash
 # Install Vercel CLI globally
@@ -335,54 +333,6 @@ vercel --prod
 - **Automatic builds** from Git repositories
 - **Custom domains** support
 - **Edge functions** for optimized performance
-
-### 🌍 Netlify
-
-```bash
-# Build the project
-npm run build
-
-# Upload the dist folder to Netlify Dashboard
-# Or use Netlify CLI:
-npm i -g netlify-cli
-netlify deploy --prod --dir=dist
-```
-
-- **Drag & drop deployment** available
-- **Form handling** and serverless functions
-- **Branch deployments** for testing
-
-### 📄 GitHub Pages
-
-```bash
-# Install gh-pages
-npm install --save-dev gh-pages
-
-# Add to package.json scripts:
-# "deploy": "gh-pages -d dist"
-
-# Build and deploy
-npm run build
-npm run deploy
-```
-
-- **Free hosting** for public repositories
-- **Custom domain** support
-- **Automatic deployments** from Git pushes
-
-### 🐳 Docker Deployment
-
-```dockerfile
-# Dockerfile
-FROM node:20-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 5173
-CMD ["npm", "run", "preview"]
-```
 
 ## ⚡ Performance Features
 
